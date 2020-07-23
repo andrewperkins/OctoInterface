@@ -1,0 +1,27 @@
+.container{
+    /* height: 100vh; */
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 20px;
+    padding: 0 ;
+  }
+  
+  .product{
+    min-width: 20vw;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  .product img{
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .margin-top-20{
+    margin-top:20px;
+  }
+  
+  mat-card-title {
+    font-size: small;
+  }
