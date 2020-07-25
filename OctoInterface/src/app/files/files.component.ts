@@ -189,7 +189,13 @@ export class FilesComponent implements OnInit {
       
   }
 
-  Print(obj){
-    this.dialog.open(FileDialogComponent);
+  openDialog(obj){
+    let dialogRef = this.dialog.open(FileDialogComponent, obj);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result == "true") {
+        console.log(`Start Printing: ${obj.display}`);
+      }
+    })
   }
 }

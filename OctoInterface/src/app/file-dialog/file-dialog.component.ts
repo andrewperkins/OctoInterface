@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-file-dialog',
@@ -8,7 +8,9 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class FileDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(MAT_DIALOG_DATA) public obj: any) {
+    console.log(obj);
+  }
 
   ngOnInit(): void {
   }

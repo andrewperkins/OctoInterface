@@ -1,6 +1,6 @@
 <mat-grid-list cols="2" rowHeight="1.75:1" class="container margin-top-20" [gutterSize]="'10px'">
     <mat-grid-tile *ngFor="let obj of json.files">
-        <mat-card class="product" (click)="Print(obj)">
+        <mat-card class="product" (click)="openDialog(obj)">
             <mat-card-title>{{ obj.display }} </mat-card-title>
             <picture>
                 <source media='(min-width:0px)' srcset="http://192.168.0.104/{{ obj.thumbnail }}">
