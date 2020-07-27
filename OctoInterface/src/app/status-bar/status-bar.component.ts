@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-status-bar',
   template: `
     <mat-toolbar>
-      <span>OctoInterface</span>
+      <span><a routerLink="/" class="octointerface">OctoInterface</a></span>
       <span class="example-spacer"></span>
       <span>Status: Connected</span>
     </mat-toolbar>
