@@ -1,5 +1,19 @@
-<h2 mat-dialog-title>{{ obj }}</h2>
-<mat-dialog-content>File Data</mat-dialog-content>
-<mat-dialog-actions>
+<h2 mat-dialog-title>{{ obj.display }}</h2>
+<mat-dialog-content class="flex-container">
+    <picture>
+        <source media='(min-width:0px)' srcset="/assets/example.jpg">
+        <img mat-card-image src="">
+    </picture>
+    <div class="other">
+        <div> Print Time: {{ obj.gcodeAnalysis.estimatedPrintTime }}</div><br>
+        <div> Length: {{ obj.gcodeAnalysis.filament.tool0.length }}</div><br>
+        <div> Dimensions: 
+            Height: {{  obj.gcodeAnalysis.dimensions.height }}, 
+            Width: {{  obj.gcodeAnalysis.dimensions.width }}, 
+            Depth: {{  obj.gcodeAnalysis.dimensions.depth }}
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions class="flex-container">
     <button mat-flat-button mat-dialog-close mat-dialog-close="true">Print</button>
 </mat-dialog-actions>

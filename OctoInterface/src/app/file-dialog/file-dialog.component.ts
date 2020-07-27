@@ -9,7 +9,6 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class FileDialogComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA) public obj: any) {
-    console.log(obj);
   }
 
   ngOnInit(): void {

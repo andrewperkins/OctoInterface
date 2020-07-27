@@ -190,7 +190,9 @@ export class FilesComponent implements OnInit {
   }
 
   openDialog(obj){
-    let dialogRef = this.dialog.open(FileDialogComponent, obj);
+    let dialogRef = this.dialog.open(FileDialogComponent, { 
+      data: obj,
+      panelClass: 'dialog-panel' });
 
     dialogRef.afterClosed().subscribe(result => {
       if (result == "true") {
