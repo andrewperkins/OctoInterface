@@ -14,6 +14,9 @@ import { FilesComponent } from './files/files.component';
 import { PrintingComponent } from './printing/printing.component';
 import { StatusBarComponent } from './status-bar/status-bar.component';
 import { FileDialogComponent } from './file-dialog/file-dialog.component';
+import { PrintTimePipe } from './print-time.pipe';
+import { MmPipe } from './mm.pipe';
+import { FilamentLengthPipe } from './filament-length.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FileDialogComponent } from './file-dialog/file-dialog.component';
     FilesComponent,
     PrintingComponent,
     StatusBarComponent,
-    FileDialogComponent
+    FileDialogComponent,
+    PrintTimePipe,
+    MmPipe,
+    FilamentLengthPipe
   ],
   imports: [
     BrowserModule,
