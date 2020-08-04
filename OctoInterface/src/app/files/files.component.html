@@ -1,13 +1,14 @@
-<mat-grid-list cols="2" rowHeight="1.75:1" class="container margin-top-20" [gutterSize]="'10px'">
-    <mat-grid-tile *ngFor="let obj of json.files">
-        <mat-card class="product" (click)="openDialog(obj)">
-            <mat-card-title>{{ obj.display }} </mat-card-title>
-            <picture>
-                <!-- <source media='(min-width:0px)' srcset="http://192.168.0.104/{{ obj.thumbnail }}"> -->
-                <source media='(min-width:0px)' srcset="/assets/example.jpg">
+<div class="files-page">
+    <div class="modal file" (click)="openDialog(obj)" *ngFor="let obj of json.files">
+        <div class="modal-header">
+            <h4>{{ obj.display }}</h4>
+        </div>
+        <div class="modal-body content">
+            <picture class="visual">
+                <source media='(min-width:0px)' srcset="http://192.168.0.104/{{ obj.thumbnail }}">
                 <img mat-card-image src="">
             </picture>
-            <mat-card-subtitle>{{ obj.gcodeAnalysis.estimatedPrintTime | printTime }}</mat-card-subtitle>
-        </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+            <h5> {{ obj.gcodeAnalysis.estimatedPrintTime| printTime }} </h5>
+        </div>
+    </div>
+</div>
