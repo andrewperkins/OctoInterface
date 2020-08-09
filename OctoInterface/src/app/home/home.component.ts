@@ -3,14 +3,27 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <mat-grid-list cols="1" rowHeight=100vh>
-      <mat-grid-tile>
-      <a class="button is-xl" routerLink="/files" class="button">Files</a>
-      </mat-grid-tile>
-    </mat-grid-list>
+    <div class="home">
+      <a class="button" routerLink="/files" class="button">Files</a>
+    </div>
   `,
   styles: [`
-
+      .home {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .button {
+        background: #2A2D32;
+        box-shadow: 10px 10px 15px #24262B, -10px -10px 15px #30343A;
+        border-radius: 20px;
+        width: 100px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        color: white;
+        text-decoration: none;
+      }
     `
   ]
 })
