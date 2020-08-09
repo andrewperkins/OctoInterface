@@ -5,11 +5,22 @@
   padding: 1em;
 }
 
-.file {
-  /* flex: 1 1 150px;  Stretching: */
-  flex: 0 1 400px;  
+.modal {
+  margin: 2em;
+  flex: 0 1 250px;  
   margin: 1em;
-  /* max-width: 400px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.modal-header {
+  padding: 12px;
+  word-break: break-all;
+  margin-bottom: 0;
+}
+
+h4, h5 {
+  color: gray;
 }
 
 .content {
@@ -24,7 +35,3 @@
   display: flex;
 }
 
-.modal-header {
-  word-break: break-all;
-  margin-bottom: 0;
-}

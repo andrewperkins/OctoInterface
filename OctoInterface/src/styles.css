@@ -6,3 +6,9 @@ html {
 body {
   margin: 0;
 }
+
+.neo-up {
+  background: #2A2D32;
+  box-shadow: 10px 10px 15px #24262B, -10px -10px 15px #30343A;
+  border-radius: 20px;
+}

@@ -1,9 +1,9 @@
 <div class="files-page">
-    <div class="modal file" (click)="openDialog(obj)" *ngFor="let obj of json.files">
+    <div class="modal file neo-up" (click)="openDialog(obj)" *ngFor="let obj of json.files">
         <div class="modal-header">
             <h4>{{ obj.display }}</h4>
         </div>
-        <div class="modal-body content">
+        <div class="content">
             <picture class="visual">
                 <source media='(min-width:0px)' srcset="http://192.168.0.104/{{ obj.thumbnail }}">
                 <img mat-card-image src="">
