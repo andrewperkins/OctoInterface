@@ -14,12 +14,15 @@ import { Component, OnInit } from '@angular/core';
         height: 100vh;
       }
       .button {
-        width: 100px;
-        height: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
         display: grid;
         place-items: center;
-        color: white;
+        color: rgb(200, 200, 200);
         text-decoration: none;
+        font-size: 2em;
       }
     `
   ]

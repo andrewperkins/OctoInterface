@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-status-bar',
   template: `
-    <header class="navbar is-xl">
-      <span><a routerLink="/" class="octointerface">OctoInterface</a></span>
-      <span class="example-spacer"></span>
-      <span>Status: Connected</span>
-    </header>
+    <div>
+    <a routerLink="/" class="octointerface neo-up">OctoInterface</a>
+    </div>
+    <div>
+      <div class="status neo-up">Status: Connected</div>
+    </div>
   `,
   styleUrls: ['./status-bar.component.css']
 })
